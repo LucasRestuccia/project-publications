@@ -38,4 +38,8 @@ class Db
     {
         $this->connection = null;
     }
+    public function query($query)
+    {
+        return $this->connection->query($query);
+    }
 }
